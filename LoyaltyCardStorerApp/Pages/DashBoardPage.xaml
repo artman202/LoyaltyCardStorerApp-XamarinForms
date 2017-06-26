@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:LoyaltyCardStorerApp"
+    x:Class="LoyaltyCardStorerApp.Pages.DashBoardPage"
+    Title="Dashboard"
+    BindingContext="local:Pages.DashBoardPage">
+    <StackLayout>
+        <Label Text="{Binding RandomText}" TextColor="Green" />
+        <Image
+            x:Name="imageTaken"
+            Source="{Binding Source}"
+            VerticalOptions="StartAndExpand"
+            HeightRequest="300" />
+        <Button
+            x:Name="takePhoto"
+            VerticalOptions="EndAndExpand"
+            Text="Add A New Card"
+            BorderRadius="0"
+            BackgroundColor="Blue"
+            TextColor="White" >
+        </Button>
+    </StackLayout>
+</ContentPage>

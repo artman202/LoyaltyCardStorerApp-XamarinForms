@@ -1,0 +1,1 @@
+# LoyaltyCardStorerApp-XamarinForms
